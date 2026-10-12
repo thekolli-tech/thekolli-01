@@ -4,6 +4,7 @@
   "private": true,
   "description": "THE KOLLI Official Website — High-Tech Software, AI Automation, Cloud & Products",
   "scripts": {
+    "build": "node build.js",
     "start": "node dev-server.js",
     "dev": "node dev-server.js"
   },

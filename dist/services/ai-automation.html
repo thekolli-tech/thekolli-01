@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI and Automation Services — THE KOLLI</title>
+  <meta name="description" content="AI-powered software, intelligent workflow automation, document processing, and business process automation engineered by THE KOLLI.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js 3D WebGL Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css?v=2.5">
+</head>
+<body>
+
+  <!-- =======================================================================
+       0. Futuristic Website Preloader / Boot Sequence
+       ======================================================================= -->
+  <div id="site-preloader">
+    <div class="preloader-core">
+      <div class="preloader-ring-outer"></div>
+      <div class="preloader-ring"></div>
+      <img src="../assets/favicon.png" alt="THE KOLLI Core" class="preloader-emblem">
+    </div>
+    <div class="preloader-status-wrap">
+      <div class="preloader-counter" id="preloader-counter">0%</div>
+      <div class="preloader-status-text" id="preloader-status-text">INITIALIZING AI AUTOMATION PIPELINE...</div>
+      <div class="preloader-bar-bg">
+        <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand" aria-label="THE KOLLI Homepage">
+        <img src="../assets/thekolli-icon.png" alt="THE KOLLI" style="height:36px; width:auto;"><span style="font-family:var(--font-display); font-size:1.2rem; font-weight:700; letter-spacing:0.12em; color:#fff;">THE KOLLI</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="index.html" class="nav-link active">Services</a></li>
+          <li><a href="../what-we-do.html" class="nav-link">What We Do</a></li>
+          <li><a href="../products/index.html" class="nav-link">Products</a></li>
+          <li><a href="../insights/index.html" class="nav-link">Insights</a></li>
+          <li><a href="../careers.html" class="nav-link">Careers</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="../contact.html" class="btn btn-primary btn-sm">
+          Discuss Your Project
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" style="display:none; position:fixed; top:72px; left:0; width:100%; background:#05090B; border-bottom:1px solid var(--border-subtle); padding:28px 24px; z-index:999;">
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:16px;">
+      <li><a href="../about.html" class="nav-link" onclick="toggleMobileMenu()">About</a></li>
+      <li><a href="index.html" class="nav-link active" onclick="toggleMobileMenu()">Services</a></li>
+      <li><a href="../what-we-do.html" class="nav-link" onclick="toggleMobileMenu()">What We Do</a></li>
+      <li><a href="../products/index.html" class="nav-link" onclick="toggleMobileMenu()">Products</a></li>
+      <li><a href="../insights/index.html" class="nav-link" onclick="toggleMobileMenu()">Insights</a></li>
+      <li><a href="../careers.html" class="nav-link" onclick="toggleMobileMenu()">Careers</a></li>
+      <li><a href="../contact.html" class="nav-link" onclick="toggleMobileMenu()">Contact</a></li>
+      <li style="margin-top: 12px;">
+        <a href="../contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Discuss Your Project</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="subpage-hero" style="position:relative; overflow:hidden;">
+      <!-- Three.js 3D WebGL Canvas for Service Page -->
+      <canvas id="webgl-ai-canvas" class="webgl-3d-canvas" data-page="services"></canvas>
+      <div class="hero-glow-orb"></div>
+      <div class="container" style="position:relative; z-index:2;">
+        <div class="breadcrumb-nav">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="index.html">Services</a>
+          <span>/</span>
+          <span style="color:var(--brand-mint);">AI & Automation</span>
+        </div>
+
+        <div style="max-width: 820px;">
+          <span class="section-tag">Core Service Offering</span>
+          <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.5rem); margin-bottom: 20px;">
+            AI and Automation
+          </h1>
+          <p style="font-size: 1.15rem; color: #cbd5e1; line-height: 1.65; margin-bottom: 30px;">
+            AI-powered software applications, intelligent workflows, and business process automation engineered to streamline document workflows, data extraction, and cross-system orchestration.
+          </p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="../contact.html?service=AI%20and%20Automation" class="btn btn-primary">
+              <i data-lucide="send" style="width:16px;"></i> Request Automation Feasibility Review
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+          <div class="channel-card">
+            <h3 style="margin-bottom:14px; display:flex; align-items:center; gap:10px;">
+              <i data-lucide="alert-triangle" style="color:var(--brand-mint);"></i> The Business Problem
+            </h3>
+            <p style="font-size:0.95rem; line-height:1.65; color:var(--text-muted);">
+              Manual extraction of data from PDFs and invoices, repetitive operational tasks between disconnected systems, slow response triage in support, and unverified AI prototypes that fail in production.
+            </p>
+          </div>
+
+          <div class="channel-card">
+            <h3 style="margin-bottom:14px; display:flex; align-items:center; gap:10px;">
+              <i data-lucide="check-circle" style="color:var(--brand-cyan);"></i> Suitable For
+            </h3>
+            <p style="font-size:0.95rem; line-height:1.65; color:var(--text-muted);">
+              Organizations with high document volume, companies automating customer operations, and enterprises seeking secure, production-grade AI integration with structured validation guardrails.
+            </p>
+          </div>
+        </div>
+
+        <!-- Scope & Deliverables -->
+        <div class="section-header">
+          <span class="section-tag">Deliverables & Scope</span>
+          <h2 class="section-title">AI & Automation Capabilities</h2>
+        </div>
+
+        <div class="services-grid" style="margin-bottom: 70px;">
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Intelligent Document Processing (IDP)</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Extracting structured records from invoices, purchase orders, legal contracts, and receipts using multi-modal OCR and rule validation pipelines.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">OCR Models</span>
+              <span class="tech-badge">Structured JSON</span>
+              <span class="tech-badge">Validation Rules</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Workflow & Process Automation</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Connecting disparate ERP, CRM, and communication platforms with event-driven triggers to execute scheduled and real-time operational workflows.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">Event Hooks</span>
+              <span class="tech-badge">Queue Processing</span>
+              <span class="tech-badge">API Orchestration</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Enterprise Knowledge Retrieval (RAG)</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Vector search and retrieval-augmented generation pipelines enabling internal teams to search technical documentation, runbooks, and policies accurately.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">Vector DBs</span>
+              <span class="tech-badge">Embeddings</span>
+              <span class="tech-badge">Semantic Search</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">AI Validation & Guardrails</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Deterministic schema verification, output sanitization, rate limiting, and audit logging to ensure production AI systems behave predictably.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">Pydantic Schema</span>
+              <span class="tech-badge">Audit Logs</span>
+              <span class="tech-badge">Human-in-the-Loop</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">AI & Automation FAQs</h2>
+        </div>
+
+        <div class="faq-accordion" style="margin-bottom:80px;">
+          <div class="faq-item open">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How do you protect enterprise data privacy with AI?</span>
+              <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              We configure zero-data-retention API endpoints or private virtual private cloud (VPC) deployments so that client proprietary data is never used to train public models. All data transfers use encrypted TLS channels.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>What is the typical delivery approach?</span>
+              <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              We begin with a data schema and feasibility review, build a working prototype with defined accuracy benchmarks, and then integrate the pipeline directly into your existing software infrastructure.
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-banner">
+          <h2>Automate Complex Business Workflows</h2>
+          <p>
+            Discuss your automation objectives with our engineering team for a realistic feasibility assessment.
+          </p>
+          <div class="cta-buttons">
+            <a href="../contact.html?service=AI%20and%20Automation" class="btn btn-primary btn-lg">
+              <i data-lucide="mail"></i> Request Feasibility Discussion
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Liftoff Footer with Mega THE KOLLI Statement -->
+    <!-- Global Footer -->
+  <footer class="global-footer">
+    <div class="wrap">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <h3>
+            <img src="../assets/thekolli-icon.png" alt="THE KOLLI" style="width:28px; height:28px; border-radius:6px;">
+            THE KOLLI
+          </h3>
+          <div class="tagline">Building Solutions. Enabling Growth.</div>
+          <p class="desc">
+            THE KOLLI builds custom software, AI-powered solutions, and technology infrastructure while developing software products for evolving business needs.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="../what-we-do.html">What We Do</a></li>
+            <li><a href="../products/index.html">Products</a></li>
+            <li><a href="../insights/index.html">Insights</a></li>
+            <li><a href="../careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="ai-automation.html">AI &amp; Automation</a></li>
+            <li><a href="cloud-it.html">IT &amp; Cloud Services</a></li>
+            <li><a href="managed-it.html">Managed IT Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="../products/klerp.html">KLERP</a></li>
+            <li><a href="../products/klai.html">KLAI</a></li>
+            <li><a href="../products/klab.html">KLAB (AI Browser)</a></li>
+            <li><a href="../products/klora.html">KLORA (AI Marketing)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="https://wa.me/916366850605" target="_blank" rel="noopener noreferrer" style="color:var(--lq-teal); font-weight:600; display:inline-flex; align-items:center; gap:8px; white-space:nowrap;" title="WhatsApp: +91 6366850605"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.275-.1-.475-.15-.675.15-.2.301-.775.978-.95 1.18-.175.2-.351.226-.651.076-.3-.15-1.267-.467-2.414-1.488-.893-.796-1.496-1.78-1.672-2.08-.175-.301-.019-.464.132-.614.135-.135.3-.351.451-.526.15-.176.201-.301.301-.502.1-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.588-.493-.509-.676-.519l-.576-.01c-.2 0-.526.075-.802.376-.275.3-1.052 1.028-1.052 2.508 0 1.48 1.077 2.909 1.228 3.109.15.201 2.12 3.238 5.136 4.542.718.31 1.278.496 1.716.634.721.23 1.378.197 1.897.12.578-.088 1.78-.727 2.03-1.43.251-.703.251-1.304.176-1.43-.075-.125-.276-.2-.576-.35z"/><path d="M20.52 3.449C18.24 1.245 15.22 0 12.046 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.948 3.71 1.444 5.71 1.447h.005c6.585 0 11.946-5.336 11.949-11.896 0-3.179-1.247-6.171-3.479-8.45zM12.05 21.785h-.004a9.87 9.87 0 01-5.032-1.378l-.361-.214-3.741.976.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.003-5.446 4.453-9.875 9.907-9.875 2.64 0 5.122 1.025 6.987 2.882a9.827 9.827 0 012.895 6.98c-.003 5.45-4.453 9.883-9.896 9.883z"/></svg> <span>+91 6366850605</span></a></li>
+            <li><a href="mailto:contact@thekolli.com">contact@thekolli.com</a></li>
+            <li><a href="../contact.html">Discuss Your Project</a></li>
+            <li style="margin-top:10px;"><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../faq.html">FAQ's</a></li>
+            <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="../security.html">Security Statement</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 THE KOLLI. All rights reserved.</span>
+        <span class="footer-closing">THE KOLLI — Building Solutions. Enabling Growth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Application Scripts -->
+  <script src="../js/preloader.js"></script>
+  <script src="../js/three-scene.js"></script>
+  <script src="../js/app.js?v=2.5"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
