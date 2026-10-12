@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>THE KOLLI — High-Tech Software, AI Automation, Cloud &amp; Products</title>
+  <meta name="description" content="THE KOLLI is a product-led technology engineering company delivering proprietary software products (KLERP, KLAB, KLAI, KLORA), custom software development, AI automation, and cloud infrastructure.">
+  <link rel="icon" type="image/png" href="assets/thekolli-icon.png">
+  <link rel="canonical" href="https://thekolli.com/">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#050505">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thekolli.com/">
+  <meta property="og:site_name" content="THE KOLLI">
+  <meta property="og:title" content="THE KOLLI — High-Tech Software, AI Automation, Cloud &amp; Products">
+  <meta property="og:description" content="Product-led technology company engineering proprietary software products (KLERP ERP, KLAB AI Browser, KLAI Engine, KLORA AI Marketing) and cloud infrastructure.">
+  <meta property="og:image" content="https://thekolli.com/assets/thekolli-icon.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://thekolli.com/">
+  <meta name="twitter:title" content="THE KOLLI — High-Tech Software, AI Automation, Cloud &amp; Products">
+  <meta name="twitter:description" content="Product-led technology company engineering proprietary software products and cloud infrastructure.">
+  <meta name="twitter:image" content="https://thekolli.com/assets/thekolli-icon.png">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://thekolli.com/#organization",
+        "name": "THE KOLLI",
+        "url": "https://thekolli.com",
+        "logo": "https://thekolli.com/assets/thekolli-icon.png",
+        "email": "thekolli.in@gmail.com",
+        "telephone": "+916366850605",
+        "description": "Technology partner and product engineering group delivering complete software products, AI automation, and cloud engineering."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "KLERP",
+        "applicationCategory": "ERPApplication",
+        "description": "Enterprise Resource Planning platform unifying operations, finance, supply chain, and procurement.",
+        "url": "https://thekolli.com/products/klerp.html"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "KLAB",
+        "applicationCategory": "BrowserApplication",
+        "description": "Intelligent AI browser for autonomous web workflows and multi-tab context synthesis.",
+        "url": "https://thekolli.com/products/klab.html"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "KLAI",
+        "applicationCategory": "ArtificialIntelligence",
+        "description": "Enterprise AI platform deploying autonomous reasoning agents and workflow automation.",
+        "url": "https://thekolli.com/products/klai.html"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "KLORA",
+        "applicationCategory": "MarketingApplication",
+        "description": "Autonomous AI digital marketing automating multi-channel ad campaigns, copywriting, and SEO.",
+        "url": "https://thekolli.com/products/klora.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- High-Tech Design System Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=3.1">
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Ambient Cursor Spotlight & Top Reading Progress Line -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div id="light" aria-hidden="true"></div>
+  <div id="bar" aria-hidden="true"></div>
+
+  <!-- High-Tech Preloader Sequence -->
+  <div id="ld" role="status" aria-label="Loading THE KOLLI">
+    <div class="cu t"></div>
+    <div class="cu b"></div>
+    <div class="rays"></div>
+    <div class="lc">
+      <div class="lk">
+        <img class="gh" src="assets/thekolli-icon.webp" alt="" width="280" height="255">
+        <div class="fl" style="--m:url(assets/thekolli-icon.webp)"><img src="assets/thekolli-icon.webp" alt="" width="280" height="255"></div>
+        <i class="ed"></i>
+      </div>
+      <div class="ldp">
+        <i></i>
+        <b id="pc">0%</b>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky High-Tech Navigation -->
+  <header id="hd">
+    <div class="wrap">
+      <nav aria-label="Primary navigation">
+        <a class="logo" href="#top">
+          <span class="mk"><img src="assets/thekolli-icon.webp" alt="THE KOLLI" width="36" height="36"></span>
+          THE KOLLI
+        </a>
+        <ul>
+          <li><a href="services/index.html">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-actions" style="display:inline-flex; align-items:center; gap:10px; justify-self:end;">
+          <a class="btn mag nav-cta" href="#contact">Get in touch</a>
+          <button class="btn-klara-nav" onclick="openKlara()" aria-label="Open KLARA AI Concierge" title="Chat with KLARA AI Assistant">
+            <span class="klara-nav-dot"></span> Ask KLARA
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="services/index.html">Services</a>
+        <a href="#products">Products</a>
+        <a href="#work">Work</a>
+        <a href="#industries">Industries</a>
+        <a href="#process">Process</a>
+        <a href="#partnerships">Partnerships</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Get in touch</a>
+        <a href="javascript:void(0)" onclick="openKlara()">Ask KLARA (AI Assistant)</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" tabindex="-1">
+    <!-- =======================================================================
+         1. Hero Section: Precision Developer Standard & 3D Ribbon K Emblem
+         ======================================================================= -->
+    <section class="hero" id="main-content">
+      <div class="wrap">
+        <div class="hero-content">
+          <p class="eyebrow">Software · AI Automation · Cloud · Engineering</p>
+          <h1 id="h1">Technology that moves your business forward.</h1>
+          <p class="sub">
+            Complete software solutions, proprietary SaaS products, practical AI automation, and resilient cloud engineering — designed around how your business works and engineered to scale.
+          </p>
+          <div class="cta">
+            <a class="btn mag" href="#products">Explore products &amp; services</a>
+            <a class="btn g mag" href="#build">What we build</a>
+            <button class="btn g mag" onclick="openKlara()" style="border-color:rgba(226,164,90,0.5);">
+              <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--am);box-shadow:0 0 10px var(--am);margin-right:8px;"></span>
+              Ask KLARA (AI)
+            </button>
+          </div>
+        </div>
+        <div class="k" id="k">
+          <div class="in" id="kin" style="--m:url(assets/thekolli-icon.webp)">
+            <div class="halo"></div>
+            <img src="assets/thekolli-icon.webp" alt="THE KOLLI Ribbon K Symbol" width="1000" height="911">
+          </div>
+        </div>
+      </div>
+      <div class="scroll" aria-hidden="true"></div>
+    </section>
+
+    <!-- =======================================================================
+         2. Kinetic Marquee & System Signal Strip
+         ======================================================================= -->
+    <div class="mq" aria-hidden="true">
+      <div>
+        <span>People</span><span>Products</span><span>Industries</span><span>Beyond</span>
+        <span>People</span><span>Products</span><span>Industries</span><span>Beyond</span>
+      </div>
+    </div>
+
+    <div class="signal">
+      <div class="wrap">
+        <span>Strategy</span><i></i>
+        <span>Engineering</span><i></i>
+        <span>Automation</span><i></i>
+        <span>Cloud Architecture</span><i></i>
+        <span>Long-term partnership</span>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         3. Principles Section (01, 02, 03)
+         ======================================================================= -->
+    <section class="principles">
+      <div class="wrap">
+        <p class="eyebrow rv">The standard we work to</p>
+        <div class="principle-grid">
+          <article class="principle rv">
+            <span>01</span>
+            <h2>Business first</h2>
+            <p>We start with the business outcome, not a favorite technology. Every system should make operations clearer, faster, and more valuable.</p>
+          </article>
+          <article class="principle rv">
+            <span>02</span>
+            <h2>Visible progress</h2>
+            <p>Clear milestones, direct communication, and working software keep decisions grounded in measurable reality from day one.</p>
+          </article>
+          <article class="principle rv">
+            <span>03</span>
+            <h2>Built to last</h2>
+            <p>Good delivery includes architectural documentation, zero vendor lock-in, rigorous security, and a dedicated team to keep improving what we launch.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Capabilities: Software, AI, Cloud, Growth & Delivery Pipeline
+         ======================================================================= -->
+    <section id="build">
+      <div class="wrap">
+        <h2 class="rv">Software, AI automation and cloud. One team to deliver them.</h2>
+        <p class="lead rv">
+          We take complete software solutions from discovery through production launch, automate the work around them, and build the cloud foundation to run and scale them.
+        </p>
+        <div class="grid">
+          <article class="p rv">
+            <h3>Software &amp; SaaS</h3>
+            <p>Custom web, mobile, and enterprise business software solutions — from product strategy and MVP through integrations, billing, and scale.</p>
+            <div class="tags">
+              <i>SaaS platforms</i><i>Web &amp; mobile apps</i><i>CRM</i><i>ERP</i><i>HRMS</i><i>POS</i>
+            </div>
+          </article>
+          <article class="p rv">
+            <h3>AI Automation</h3>
+            <p>Useful AI agents and connected autonomous workflows that eliminate repetitive tasks, respond to customer inquiries, and support your team 24/7.</p>
+            <div class="tags">
+              <i>AI agents</i><i>WhatsApp AI</i><i>Voice &amp; IVR</i><i>Lead qualification</i><i>Workflows</i>
+            </div>
+          </article>
+          <article class="p rv">
+            <h3>Cloud Engineering</h3>
+            <p>Secure cloud infrastructure, zero-downtime deployment pipelines, and observability built for high availability, compliance, and growth.</p>
+            <div class="tags">
+              <i>AWS</i><i>Google Cloud</i><i>Kubernetes</i><i>CI/CD</i><i>Terraform</i><i>Docker</i>
+            </div>
+          </article>
+          <article class="p rv">
+            <h3>Growth Systems</h3>
+            <p>Customer acquisition and marketing automation systems that turn digital attention into pipeline and revenue, measured down to cost per lead.</p>
+            <div class="tags">
+              <i>Meta &amp; Google Ads</i><i>LinkedIn Ads</i><i>SEO &amp; GEO</i><i>ChatGPT Content</i><i>CRM automation</i>
+            </div>
+          </article>
+        </div>
+
+        <h2 class="rv" style="margin-top:140px">From idea to scale, under one roof.</h2>
+        <div class="pipe rv" id="pipe">
+          <div>Idea</div>
+          <div>Software</div>
+          <div>AI</div>
+          <div>Infrastructure</div>
+          <div>Production</div>
+          <div>Scale</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Representative Engagements (Proof Grid)
+         ======================================================================= -->
+    <section id="work">
+      <div class="wrap">
+        <p class="eyebrow rv">Representative engagements</p>
+        <h2 class="rv">Built for the moments that matter.</h2>
+        <p class="lead rv">Every engagement starts with the business problem, then connects strategy, software, and operations into one coherent system your team can own.</p>
+        <div class="proof-grid">
+          <article class="proof-card rv">
+            <span class="index">01 / OPERATIONS</span>
+            <h3>One operating view</h3>
+            <p>Unify inventory, billing, finance, procurement, and analytics when fragmented tools begin slowing down organizational growth.</p>
+            <b>ERP · Workflow · Data Sync</b>
+          </article>
+          <article class="proof-card rv">
+            <span class="index">02 / CUSTOMER EXPERIENCE</span>
+            <h3>Always-on service</h3>
+            <p>Give customers instantaneous answers and free your team from manual support with AI concierges, WhatsApp bots, and intelligent ticket routing.</p>
+            <b>AI · WhatsApp · Voice Concierge</b>
+          </article>
+          <article class="proof-card rv">
+            <span class="index">03 / SCALE</span>
+            <h3>Ready for the next stage</h3>
+            <p>Transition from a successful product to bulletproof cloud infrastructure, measurable customer acquisition, and an enterprise foundation built to last.</p>
+            <b>Cloud · Product · Growth</b>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. Ready-to-Use Proprietary Products & Solutions
+         ======================================================================= -->
+    <section id="products">
+      <div class="wrap">
+        <h2 class="rv">Proprietary products &amp; custom engineering.</h2>
+        <p class="lead rv">
+          All our products are ready to use today. From our intelligent AI browser to enterprise ERP and autonomous digital marketing — tell us how your business runs and we equip it with the right system.
+        </p>
+
+        <div class="pg">
+          <!-- Product 1: KLERP -->
+          <article class="p rv">
+            <div class="ct"><span>Enterprise ERP</span></div>
+            <h3>KLERP</h3>
+            <p>Enterprise Resource Planning platform unifying finance, inventory, supply chain, procurement, and billing into one connected environment. Ready to use.</p>
+            <div class="tags">
+              <i>Connected operations</i><i>Inventory</i><i>Billing &amp; Finance</i><i>Zero Silos</i>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="products/klerp.html" class="btn sm" style="align-self:flex-start;">Explore KLERP</a>
+            </div>
+          </article>
+
+          <!-- Product 2: KLAB -->
+          <article class="p rv">
+            <div class="ct"><span>AI Browser</span></div>
+            <h3>KLAB</h3>
+            <p>Intelligent AI browser engineered for autonomous web workflows, zero-clutter extraction, and multi-tab context synthesis. Ready to use.</p>
+            <div class="tags">
+              <i>Agentic navigation</i><i>Clean DOM</i><i>Multi-tab context</i><i>Zero-telemetry</i>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="products/klab.html" class="btn sm" style="align-self:flex-start;">Explore KLAB</a>
+            </div>
+          </article>
+
+          <!-- Product 3: KLAI -->
+          <article class="p rv">
+            <div class="ct"><span>AI Platform</span></div>
+            <h3>KLAI</h3>
+            <p>Enterprise AI platform deploying intelligent reasoning agents, automated data ingestion pipelines, and continuous workflow automation. Ready to use.</p>
+            <div class="tags">
+              <i>Autonomous workflows</i><i>System integrations</i><i>Audit trail</i><i>API linked</i>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="products/klai.html" class="btn sm" style="align-self:flex-start;">Explore KLAI</a>
+            </div>
+          </article>
+
+          <!-- Product 4: KLORA -->
+          <article class="p rv">
+            <div class="ct"><span>AI Marketing · NEW</span></div>
+            <h3>KLORA</h3>
+            <p>Autonomous AI digital marketing automating multi-channel ad campaigns across Meta, Google, and LinkedIn, generative ChatGPT copywriting, SEO &amp; GEO, and AI graphic design.</p>
+            <div class="tags">
+              <i>Meta &amp; Google Ads</i><i>LinkedIn Ads</i><i>SEO &amp; GEO</i><i>AI Graphics</i>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="products/klora.html" class="btn sm" style="align-self:flex-start;">Explore KLORA</a>
+            </div>
+          </article>
+
+          <!-- Solution 5: HRMS & People Systems -->
+          <article class="p rv">
+            <div class="ct"><span>People Systems</span></div>
+            <h3>Custom HRMS &amp; Payroll</h3>
+            <p>Digital employee onboarding, attendance, leave, statutory payroll processing, and performance reviews in one clean system your whole organization can use.</p>
+            <div class="tags">
+              <i>Onboarding</i><i>Attendance</i><i>Leave</i><i>Payroll</i><i>Reviews</i>
+            </div>
+            <div style="margin-top:20px;">
+              <a href="services/index.html" class="btn sm g" style="align-self:flex-start;">View HRMS Details</a>
+            </div>
+          </article>
+
+          <!-- Solution 6: Custom Systems -->
+          <article class="p rv hl">
+            <div class="ct"><span>Bespoke Engineering</span></div>
+            <h3>Something else entirely</h3>
+            <p>CRM portals, custom client workspaces, booking engines, or complex proprietary systems. If you can define the business problem, we design and build the system.</p>
+            <div class="tags">
+              <i>Custom CRM</i><i>Portals</i><i>Integrations</i><i>Bespoke AI</i>
+            </div>
+            <a class="btn mag" href="#contact" style="margin-top:24px;">Tell us what you need</a>
+          </article>
+        </div>
+
+        <!-- Launchpad Section -->
+        <div class="lp" id="launchpad">
+          <div class="rv">
+            <h2 style="font-size:clamp(30px,4vw,54px)">Have an idea but not a company yet?</h2>
+            <p class="lead">Launchpad takes a founder from initial validation to a working product with active customers. We build the technology alongside you.</p>
+            <div class="steps">
+              <i>Validate</i><i>Brand</i><i>Product</i><i>AI</i><i>MVP</i><i>Acquire</i><i>Scale</i>
+            </div>
+            <a class="btn mag" href="#contact">Get in touch with Launchpad</a>
+          </div>
+          <div class="rg rv" aria-hidden="true">
+            <i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. Context Matters: Industries & Technology Ecosystem
+         ======================================================================= -->
+    <section id="industries">
+      <div class="wrap">
+        <p class="eyebrow rv">Context matters</p>
+        <h2 class="rv">Technology shaped around the way your industry works.</h2>
+        <p class="lead rv">We bring adaptable systems engineering to organizations with complex operational pipelines, high customer standards, and room to grow.</p>
+        <div class="industry-grid">
+          <article class="industry rv">
+            <span>01</span>
+            <h3>Professional services</h3>
+            <p>Client proposals, resource scheduling, project delivery, and billing in one connected workflow.</p>
+          </article>
+          <article class="industry rv">
+            <span>02</span>
+            <h3>Retail &amp; commerce</h3>
+            <p>Multi-location inventory, unified point of sale, customer loyalty journeys, and marketing systems that work together.</p>
+          </article>
+          <article class="industry rv">
+            <span>03</span>
+            <h3>Education &amp; people</h3>
+            <p>Enrollment workflows, student records, staff HR, and performance review experiences designed for real teams.</p>
+          </article>
+          <article class="industry rv">
+            <span>04</span>
+            <h3>Founders &amp; ventures</h3>
+            <p>From product validation to commercial launch — a dedicated technical team for turning an ambitious idea into a market reality.</p>
+          </article>
+        </div>
+        <div class="stack-line rv">
+          <span>Technology ecosystem</span>
+          <b>AWS</b><b>Google Cloud</b><b>Node.js</b><b>Python / FastAPI</b><b>Flutter</b><b>PostgreSQL</b><b>Redis</b><b>Docker / K8s</b><b>AI &amp; LLM Systems</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. How We Work / Process
+         ======================================================================= -->
+    <section id="process">
+      <div class="wrap">
+        <p class="eyebrow rv">How we work</p>
+        <h2 class="rv">Clear thinking. Serious delivery.</h2>
+        <p class="lead rv">A senior engineering team stays close to the problem from the first conversation through production deployment and continuous evolution.</p>
+        <div class="process-grid">
+          <article class="process-step rv">
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Understand the core business model, key stakeholders, architectural constraints, and the measurable outcome that matters.</p>
+          </article>
+          <article class="process-step rv">
+            <span>02</span>
+            <h3>Define</h3>
+            <p>Translate the business opportunity into an actionable technical roadmap, architecture specification, and delivery timeline.</p>
+          </article>
+          <article class="process-step rv">
+            <span>03</span>
+            <h3>Build</h3>
+            <p>Ship in focused sprints with visible milestones, direct pair communication, and automated test coverage.</p>
+          </article>
+          <article class="process-step rv">
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>Prepare the operational team, infrastructure scaling, analytics instrumentation, and workflows for a confident release.</p>
+          </article>
+          <article class="process-step rv">
+            <span>05</span>
+            <h3>Improve</h3>
+            <p>Stay actively involved through performance optimization, automation enhancements, technical support, and the next strategic milestone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         9. Ways to Work Together / Partnerships
+         ======================================================================= -->
+    <section id="partnerships">
+      <div class="wrap">
+        <p class="eyebrow rv">Ways to work together</p>
+        <h2 class="rv">The right model for the stage you are in.</h2>
+        <div class="partnership-grid">
+          <article class="partnership rv">
+            <span>PROJECT</span>
+            <h3>Build something specific</h3>
+            <p>A defined web platform, mobile app, ERP integration, or automated workflow with a fixed scope, clear milestone schedule, and defined outcome.</p>
+            <a href="#contact">Discuss a project <b>↗</b></a>
+          </article>
+          <article class="partnership rv featured">
+            <span>PARTNERSHIP</span>
+            <h3>Extend your technology team</h3>
+            <p>A dedicated senior engineering team embedded alongside your leadership for continuous product development, AI automation, and cloud growth.</p>
+            <a href="#contact">Explore a partnership <b>↗</b></a>
+          </article>
+          <article class="partnership rv">
+            <span>STRATEGY</span>
+            <h3>Find the next right move</h3>
+            <p>Comprehensive technology architecture audits, product roadmapping, AI feasibility studies, and an actionable strategy for operational progress.</p>
+            <a href="#contact">Start a conversation <b>↗</b></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         10. Evolution Path (#path)
+         ======================================================================= -->
+    <section id="path">
+      <div class="wrap sp">
+        <div class="pl">
+          <h2 class="rv">Where this is going.</h2>
+          <p class="lead rv">We start as master builders for ambitious companies. We are expanding into a technology group that designs, scales, and owns proprietary products.</p>
+        </div>
+        <div class="path" id="pth">
+          <div class="st">
+            <h3>Client engineering</h3>
+            <p>Web applications, mobile platforms, AI automation systems, and infrastructure built for high-growth enterprises.</p>
+          </div>
+          <div class="st">
+            <h3>Recurring partnerships</h3>
+            <p>Clients retain our team for continuous product expansion, automated workflows, cloud modernization, and digital acquisition.</p>
+          </div>
+          <div class="st">
+            <h3>Proprietary products</h3>
+            <p>Recurring enterprise challenges become reusable SaaS and AI products that we engineer and operate (KLERP, KLAB, KLAI, KLORA).</p>
+          </div>
+          <div class="st">
+            <h3>Technology group</h3>
+            <p>A premier global holding group of software products, specialized AI engines, digital ventures, and engineering teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         11. One Name. Every Division (#orb)
+         ======================================================================= -->
+    <section>
+      <div class="wrap">
+        <h2 class="rv" style="margin-inline:auto;text-align:center">One name. Every division.</h2>
+        <div class="orb rv" id="orb">
+          <div class="ring o" id="ro"></div>
+          <div class="ring n" id="rn"></div>
+          <div class="ctr">THE KOLLI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         12. High-Tech Contact Section (#contact)
+         ======================================================================= -->
+    <section class="end" id="contact">
+      <div class="wrap">
+        <h2 class="rv">Ready to build what you need.</h2>
+        <div class="contact-grid">
+          <div class="contact-copy rv">
+            <p>Tell us what you are building, what is slowing you down, or where you want to take your business next. We will take it from there.</p>
+            <div style="margin-top:28px; display:flex; flex-direction:column; gap:12px;">
+              <div>
+                <span style="font-size:11px; text-transform:uppercase; letter-spacing:.14em; color:var(--am); display:block; margin-bottom:4px;">Direct WhatsApp</span>
+                <a href="https://wa.me/916366850605" target="_blank" rel="noopener noreferrer" style="font-size:16px; color:var(--iv); font-weight:500;">+91 6366850605 <b>↗</b></a>
+              </div>
+              <div>
+                <span style="font-size:11px; text-transform:uppercase; letter-spacing:.14em; color:var(--am); display:block; margin-bottom:4px;">Direct Email</span>
+                <a href="mailto:thekolli.in@gmail.com" style="font-size:16px; color:var(--iv); font-weight:500;">thekolli.in@gmail.com <b>↗</b></a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form rv" id="contact-form">
+            <div class="field">
+              <label for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" required placeholder="Alex Mercer">
+            </div>
+            <div class="field">
+              <label for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" required placeholder="alex@company.com">
+            </div>
+            <div class="field">
+              <label for="contact-company">Company</label>
+              <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="Acme Corp">
+            </div>
+            <div class="field">
+              <label for="contact-phone">Phone / WhatsApp</label>
+              <input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210">
+            </div>
+            <div class="field full">
+              <label for="contact-message">What can we build together?</label>
+              <textarea id="contact-message" name="message" required placeholder="Describe your product requirements, operational bottlenecks, or target timeline..."></textarea>
+            </div>
+            <button class="btn mag" type="submit">Send enquiry &amp; connect on WhatsApp</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Dedicated Floating WhatsApp Pill with Official SVG Icon -->
+  <a href="https://wa.me/916366850605" target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Chat with THE KOLLI on WhatsApp (+91 6366850605)">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.711 1.456h.005c6.554 0 11.89-5.336 11.893-11.893a11.821 11.821 0 00-3.48-8.412z"/>
+    </svg>
+    <span>WhatsApp · +91 6366850605</span>
+  </a>
+
+  <!-- High-Tech Site Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <a class="logo" href="#top">
+          <span class="mk"><img src="assets/thekolli-icon.webp" alt="THE KOLLI" style="height:28px;width:auto;display:block;"></span>
+          THE KOLLI
+        </a>
+        <h2>About THE KOLLI</h2>
+        <p>We partner with ambitious companies to engineer proprietary software products, automate critical operations with AI, build dependable cloud systems, and scale revenue through digital marketing.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Products &amp; Services</h3>
+        <a href="products/klerp.html">KLERP (ERP)</a>
+        <a href="products/klab.html">KLAB (AI Browser)</a>
+        <a href="products/klai.html">KLAI (AI Engine)</a>
+        <a href="products/klora.html">KLORA (AI Marketing)</a>
+        <a href="services/index.html">Custom Software &amp; SaaS</a>
+        <a href="services/index.html#ai-cloud">AI &amp; Cloud DevOps</a>
+      </div>
+      <div class="footer-contact">
+        <h3>Start a conversation</h3>
+        <p>Tell us what you are building or where your business needs to go next.</p>
+        <a href="https://wa.me/916366850605" target="_blank" rel="noopener noreferrer">WhatsApp: +91 6366850605 <b>↗</b></a>
+        <a href="mailto:thekolli.in@gmail.com">thekolli.in@gmail.com <b>↗</b></a>
+        <a href="mailto:contact@thekolli.com">contact@thekolli.com <b>↗</b></a>
+        <a href="#contact">Send an enquiry <b>↗</b></a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 THE KOLLI. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ's</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </div>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="js/app.js?v=3.1" defer></script>
+</body>
+</html>

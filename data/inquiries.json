@@ -1,0 +1,93 @@
+[
+  {
+    "inquiryId": "INQ-MV28JBTJ-726",
+    "createdAt": "2026-10-10T10:12:13.591Z",
+    "name": "Aravind Kolli",
+    "email": "aravind@enterprisegrowth.com",
+    "company": "Kolli Holdings",
+    "interest": "Custom Software & Enterprise AI",
+    "region": "International",
+    "currency": "USD",
+    "timeline": "1 - 3 months",
+    "notes": "Initiating deployment discussion for THE KOLLI technology stack.",
+    "ip": "::1"
+  },
+  {
+    "inquiryId": "INQ-MV0XX1I7-902",
+    "createdAt": "2026-10-09T12:27:11.455Z",
+    "name": "Vikram Mehta",
+    "email": "vikram@tech.com",
+    "company": "Tech Ventures",
+    "interest": "KLORA Marketing Platform",
+    "region": "International",
+    "currency": "USD",
+    "timeline": "1 - 3 months",
+    "notes": "Autonomous multi-channel marketing automation",
+    "ip": "::ffff:127.0.0.1"
+  },
+  {
+    "inquiryId": "INQ-MV0T1VGE-804",
+    "createdAt": "2026-10-09T10:10:58.814Z",
+    "name": "Sarah Connor",
+    "email": "sarah@test.com",
+    "company": "Skynet Research",
+    "interest": "KLAB AI Browser",
+    "region": "International",
+    "currency": "USD",
+    "timeline": "Immediate (< 1 month)",
+    "notes": "Testing KLAB AI browser deployment",
+    "ip": "::1"
+  },
+  {
+    "inquiryId": "INQ-MV0RD46V-479",
+    "createdAt": "2026-10-09T09:23:44.119Z",
+    "name": "Sarah Connor",
+    "email": "sarah@skynet-defense.com",
+    "company": "Cyberdyne Resistance",
+    "interest": "AI & Automation",
+    "region": "International",
+    "currency": "USD",
+    "timeline": "Immediate (< 1 month)",
+    "notes": "",
+    "ip": "::1"
+  },
+  {
+    "inquiryId": "INQ-MV0QY8P1-749",
+    "createdAt": "2026-10-09T09:12:10.119Z",
+    "name": "Priya Sharma",
+    "email": "priya@acme.com",
+    "company": "Acme Logistics",
+    "interest": "Software Development",
+    "region": "International",
+    "currency": "USD",
+    "timeline": "1 - 3 months",
+    "notes": "",
+    "ip": "::1"
+  },
+  {
+    "inquiryId": "INQ-MV0MJ3I3-129",
+    "createdAt": "2026-10-09T07:08:25.083Z",
+    "name": "Marcus Vance",
+    "email": "marcus@vancecloud.io",
+    "company": "Vance Cloud Systems",
+    "interest": "Software Development",
+    "region": "North America",
+    "currency": "USD",
+    "timeline": "1 - 3 months",
+    "notes": "Verification test inquiry.",
+    "ip": "::1"
+  },
+  {
+    "inquiryId": "INQ-MV0LTI62-792",
+    "createdAt": "2026-10-09T06:48:31.035Z",
+    "name": "Aarav Sharma",
+    "email": "aarav@enterprise.in",
+    "company": "Aarav Tech Logistics",
+    "interest": "Software Development",
+    "region": "India (INR Quotations)",
+    "currency": "USD",
+    "timeline": "1 - 3 months",
+    "notes": "Inquiry regarding ERP integration",
+    "ip": "::1"
+  }
+]

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Development Services — THE KOLLI</title>
+  <meta name="description" content="Custom software development by THE KOLLI: Web applications, mobile platforms, ERP/CRM engineering, and enterprise API integrations.">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Three.js 3D WebGL Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css?v=2.5">
+</head>
+<body>
+
+  <!-- =======================================================================
+       0. Futuristic Website Preloader / Boot Sequence
+       ======================================================================= -->
+  <div id="site-preloader">
+    <div class="preloader-core">
+      <div class="preloader-ring-outer"></div>
+      <div class="preloader-ring"></div>
+      <img src="../assets/favicon.png" alt="THE KOLLI Core" class="preloader-emblem">
+    </div>
+    <div class="preloader-status-wrap">
+      <div class="preloader-counter" id="preloader-counter">0%</div>
+      <div class="preloader-status-text" id="preloader-status-text">INITIALIZING CODE REPOSITORY ENGINE...</div>
+      <div class="preloader-bar-bg">
+        <div class="preloader-bar-fill" id="preloader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="nav-brand" aria-label="THE KOLLI Homepage">
+        <img src="../assets/thekolli-icon.png" alt="THE KOLLI" style="height:36px; width:auto;"><span style="font-family:var(--font-display); font-size:1.2rem; font-weight:700; letter-spacing:0.12em; color:#fff;">THE KOLLI</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../about.html" class="nav-link">About</a></li>
+          <li><a href="index.html" class="nav-link active">Services</a></li>
+          <li><a href="../what-we-do.html" class="nav-link">What We Do</a></li>
+          <li><a href="../products/index.html" class="nav-link">Products</a></li>
+          <li><a href="../insights/index.html" class="nav-link">Insights</a></li>
+          <li><a href="../careers.html" class="nav-link">Careers</a></li>
+          <li><a href="../contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="../contact.html" class="btn btn-primary btn-sm">
+          Discuss Your Project
+        </a>
+      </div>
+      <button class="mobile-toggle" id="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" style="display:none; position:fixed; top:72px; left:0; width:100%; background:#05090B; border-bottom:1px solid var(--border-subtle); padding:28px 24px; z-index:999;">
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:16px;">
+      <li><a href="../about.html" class="nav-link" onclick="toggleMobileMenu()">About</a></li>
+      <li><a href="index.html" class="nav-link active" onclick="toggleMobileMenu()">Services</a></li>
+      <li><a href="../what-we-do.html" class="nav-link" onclick="toggleMobileMenu()">What We Do</a></li>
+      <li><a href="../products/index.html" class="nav-link" onclick="toggleMobileMenu()">Products</a></li>
+      <li><a href="../insights/index.html" class="nav-link" onclick="toggleMobileMenu()">Insights</a></li>
+      <li><a href="../careers.html" class="nav-link" onclick="toggleMobileMenu()">Careers</a></li>
+      <li><a href="../contact.html" class="nav-link" onclick="toggleMobileMenu()">Contact</a></li>
+      <li style="margin-top: 12px;">
+        <a href="../contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Discuss Your Project</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Service Hero -->
+    <section class="subpage-hero" style="position:relative; overflow:hidden;">
+      <!-- Three.js 3D WebGL Canvas for Service Page -->
+      <canvas id="webgl-sd-canvas" class="webgl-3d-canvas" data-page="services"></canvas>
+      <div class="hero-glow-orb"></div>
+      <div class="container" style="position:relative; z-index:2;">
+        <div class="breadcrumb-nav">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#services">Services</a>
+          <span>/</span>
+          <span style="color:var(--teal-primary);">Software Development</span>
+        </div>
+
+        <div style="max-width: 820px;">
+          <span class="section-eyebrow">Core Service Offering</span>
+          <h1 style="font-size: clamp(2.4rem, 4.5vw, 3.5rem); margin-bottom: 20px;">
+            Software Development
+          </h1>
+          <p style="font-size: 1.15rem; color: #cbd5e1; line-height: 1.65; margin-bottom: 30px;">
+            Custom digital products and business applications engineered around your requirements with clean architecture, high maintainability, and complete source code ownership.
+          </p>
+          <div style="display:flex; gap:14px; flex-wrap:wrap;">
+            <a href="../contact.html?service=Software%20Development" class="btn btn-primary">
+              Discuss Your Project
+            </a>
+            <a href="../index.html#services" class="btn btn-secondary">
+              Explore All Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem & Target Audience -->
+    <section>
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+          <div class="channel-card">
+            <h3 style="margin-bottom:14px; display:flex; align-items:center; gap:10px;">
+              <i data-lucide="alert-triangle" style="color:var(--brand-mint);"></i> The Business Problem
+            </h3>
+            <p style="font-size:0.95rem; line-height:1.65; color:var(--text-muted);">
+              Growing enterprises often struggle with rigid off-the-shelf software, monolithic legacy applications that fail to scale, fragmented data silos, and third-party tools that do not align with core business workflows.
+            </p>
+          </div>
+
+          <div class="channel-card">
+            <h3 style="margin-bottom:14px; display:flex; align-items:center; gap:10px;">
+              <i data-lucide="check-circle" style="color:var(--brand-cyan);"></i> Suitable For
+            </h3>
+            <p style="font-size:0.95rem; line-height:1.65; color:var(--text-muted);">
+              Companies modernizing legacy systems, organizations seeking custom internal operations software, and product-focused businesses requiring production-grade web or mobile platforms with modular API backends.
+            </p>
+          </div>
+        </div>
+
+        <!-- Deliverables and Scope -->
+        <div class="section-header">
+          <span class="section-tag">Scope & Capabilities</span>
+          <h2 class="section-title">Deliverables and Engineering Scope</h2>
+          <p class="section-subtitle">
+            Every project is delivered under clear milestone definitions with complete source code handover and technical documentation.
+          </p>
+        </div>
+
+        <div class="services-grid" style="margin-bottom: 70px;">
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Web & Cloud Applications</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Modern, responsive frontend applications paired with scalable backend services designed for reliability, fast load times, and structured data handling.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">Next.js / React</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Node.js / Go</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Mobile Applications</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Cross-platform mobile applications for iOS and Android with secure offline synchronization, local caching, and clean integration into enterprise APIs.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">REST / GraphQL</span>
+              <span class="tech-badge">OAuth / JWT</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">Custom ERP & CRM Systems</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Tailored business operating software structured around your exact operational workflows: order management, invoicing, customer lifecycle, and inventory tracking.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">Relational Schemas</span>
+              <span class="tech-badge">Audit Trails</span>
+              <span class="tech-badge">Role-Based Access</span>
+              <span class="tech-badge">Multi-Tenant</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <h4 style="font-size:1.25rem; margin-bottom:12px;">API & Integration Architecture</h4>
+            <p style="font-size:0.92rem; color:var(--text-muted); line-height:1.6; margin-bottom:16px;">
+              Robust API gateways, webhook listeners, and middleware bridges connecting payment gateways, accounting software, legacy databases, and partner ecosystems.
+            </p>
+            <div class="tech-badges-row">
+              <span class="tech-badge">OpenAPI / Swagger</span>
+              <span class="tech-badge">Webhooks</span>
+              <span class="tech-badge">Redis Queues</span>
+              <span class="tech-badge">Event Bus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- The Engagement Process -->
+        <div class="section-header">
+          <span class="section-tag">Transparent Delivery</span>
+          <h2 class="section-title">The Engineering Process</h2>
+          <p class="section-subtitle">
+            A milestone-governed methodology that prioritizes technical clarity, regular demos, and full transparency.
+          </p>
+        </div>
+
+        <div class="dual-engine-wrapper" style="margin-bottom:70px;">
+          <div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+            <div style="background:rgba(7,9,14,0.6); padding:24px; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <span class="mono" style="color:var(--brand-mint); font-weight:700; font-size:1.1rem;">01</span>
+              <h4 style="margin:10px 0 6px;">Discovery & Architecture</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Technical requirements analysis, system architecture diagrams, and database schema definition.</p>
+            </div>
+            <div style="background:rgba(7,9,14,0.6); padding:24px; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <span class="mono" style="color:var(--brand-mint); font-weight:700; font-size:1.1rem;">02</span>
+              <h4 style="margin:10px 0 6px;">Milestone Sprints</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Iterative engineering cycles with demo builds, code reviews, and structured progress updates.</p>
+            </div>
+            <div style="background:rgba(7,9,14,0.6); padding:24px; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <span class="mono" style="color:var(--brand-mint); font-weight:700; font-size:1.1rem;">03</span>
+              <h4 style="margin:10px 0 6px;">Testing & Deployment</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Automated unit and integration testing, security review, and containerized deployment pipelines.</p>
+            </div>
+            <div style="background:rgba(7,9,14,0.6); padding:24px; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+              <span class="mono" style="color:var(--brand-mint); font-weight:700; font-size:1.1rem;">04</span>
+              <h4 style="margin:10px 0 6px;">IP Handover & Support</h4>
+              <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;">Complete code repository ownership, technical documentation, and optional support retainers.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        <div class="section-header">
+          <span class="section-tag">Frequently Asked Questions</span>
+          <h2 class="section-title">Software Development FAQs</h2>
+        </div>
+
+        <div class="faq-accordion" style="margin-bottom:80px;">
+          <div class="faq-item open">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Who owns the intellectual property (IP) and source code?</span>
+              <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              You do. Upon completion and milestone settlement, all custom source code, documentation, and digital assets are 100% transferred to your organization under standard commercial agreements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How are project fees structured?</span>
+              <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Software projects are billed on either fixed-price milestone agreements with deliverables-based validation, or structured sprint phases for evolving scopes. We provide clear preliminary scopes before any contract execution.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Do you provide ongoing maintenance after launch?</span>
+              <i data-lucide="chevron-down" class="faq-icon-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              Yes. We offer ongoing maintenance retainers and Managed IT support contracts covering security patches, dependency updates, and feature enhancements.
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div class="cta-banner">
+          <h2>Ready to Discuss Your Software Project?</h2>
+          <p>
+            Contact our engineering team to review your architectural requirements, data models, and timeline goals.
+          </p>
+          <div class="cta-buttons">
+            <a href="../contact.html?service=Software%20Development" class="btn btn-primary btn-lg">
+              <i data-lucide="mail"></i> Submit Project Scope Request
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Liftoff Footer with Mega THE KOLLI Statement -->
+    <!-- Global Footer -->
+  <footer class="global-footer">
+    <div class="wrap">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <h3>
+            <img src="../assets/thekolli-icon.png" alt="THE KOLLI" style="width:28px; height:28px; border-radius:6px;">
+            THE KOLLI
+          </h3>
+          <div class="tagline">Building Solutions. Enabling Growth.</div>
+          <p class="desc">
+            THE KOLLI builds custom software, AI-powered solutions, and technology infrastructure while developing software products for evolving business needs.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="index.html">Services</a></li>
+            <li><a href="../what-we-do.html">What We Do</a></li>
+            <li><a href="../products/index.html">Products</a></li>
+            <li><a href="../insights/index.html">Insights</a></li>
+            <li><a href="../careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="software-development.html">Software Development</a></li>
+            <li><a href="ai-automation.html">AI &amp; Automation</a></li>
+            <li><a href="cloud-it.html">IT &amp; Cloud Services</a></li>
+            <li><a href="managed-it.html">Managed IT Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="../products/klerp.html">KLERP</a></li>
+            <li><a href="../products/klai.html">KLAI</a></li>
+            <li><a href="../products/klab.html">KLAB (AI Browser)</a></li>
+            <li><a href="../products/klora.html">KLORA (AI Marketing)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="../contact.html">Contact Us</a></li>
+            <li><a href="https://wa.me/916366850605" target="_blank" rel="noopener noreferrer" style="color:var(--lq-teal); font-weight:600; display:inline-flex; align-items:center; gap:8px; white-space:nowrap;" title="WhatsApp: +91 6366850605"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.275-.1-.475-.15-.675.15-.2.301-.775.978-.95 1.18-.175.2-.351.226-.651.076-.3-.15-1.267-.467-2.414-1.488-.893-.796-1.496-1.78-1.672-2.08-.175-.301-.019-.464.132-.614.135-.135.3-.351.451-.526.15-.176.201-.301.301-.502.1-.2.05-.376-.025-.526-.075-.15-.676-1.63-.927-2.232-.244-.588-.493-.509-.676-.519l-.576-.01c-.2 0-.526.075-.802.376-.275.3-1.052 1.028-1.052 2.508 0 1.48 1.077 2.909 1.228 3.109.15.201 2.12 3.238 5.136 4.542.718.31 1.278.496 1.716.634.721.23 1.378.197 1.897.12.578-.088 1.78-.727 2.03-1.43.251-.703.251-1.304.176-1.43-.075-.125-.276-.2-.576-.35z"/><path d="M20.52 3.449C18.24 1.245 15.22 0 12.046 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.948 3.71 1.444 5.71 1.447h.005c6.585 0 11.946-5.336 11.949-11.896 0-3.179-1.247-6.171-3.479-8.45zM12.05 21.785h-.004a9.87 9.87 0 01-5.032-1.378l-.361-.214-3.741.976.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.003-5.446 4.453-9.875 9.907-9.875 2.64 0 5.122 1.025 6.987 2.882a9.827 9.827 0 012.895 6.98c-.003 5.45-4.453 9.883-9.896 9.883z"/></svg> <span>+91 6366850605</span></a></li>
+            <li><a href="mailto:contact@thekolli.com">contact@thekolli.com</a></li>
+            <li><a href="../contact.html">Discuss Your Project</a></li>
+            <li style="margin-top:10px;"><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../faq.html">FAQ's</a></li>
+            <li><a href="../terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="../security.html">Security Statement</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 THE KOLLI. All rights reserved.</span>
+        <span class="footer-closing">THE KOLLI — Building Solutions. Enabling Growth.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Application Scripts -->
+  <script src="../js/preloader.js"></script>
+  <script src="../js/three-scene.js"></script>
+  <script src="../js/app.js?v=2.5"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

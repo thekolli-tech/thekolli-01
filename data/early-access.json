@@ -1,0 +1,72 @@
+[
+  {
+    "registrationId": "EA-KLORA-MV0XX1HW",
+    "createdAt": "2026-10-09T12:27:11.444Z",
+    "product": "KLORA",
+    "name": "Ananya Patel",
+    "email": "ananya@growthcorp.com",
+    "company": "GrowthCorp",
+    "teamSize": "50-250",
+    "useCase": "Meta and Google Ads automation"
+  },
+  {
+    "registrationId": "EA-KLERP-MV0X2NM6",
+    "createdAt": "2026-10-09T12:03:33.774Z",
+    "product": "KLERP",
+    "name": "Rohan Mehta",
+    "email": "rohan@enterprise.com",
+    "company": "Mehta Global",
+    "teamSize": "50 - 250 Users",
+    "useCase": "Core finance and inventory operations"
+  },
+  {
+    "registrationId": "EA-KLAB-MV0T4BR2",
+    "createdAt": "2026-10-09T10:12:53.246Z",
+    "product": "KLAB",
+    "name": "Ada Lovelace",
+    "email": "ada@research.io",
+    "company": "Analytical Engine Corp",
+    "teamSize": "10-50",
+    "useCase": ""
+  },
+  {
+    "registrationId": "EA-KLAI-MV0RD47J",
+    "createdAt": "2026-10-09T09:23:44.143Z",
+    "product": "KLAI",
+    "name": "Sarah Connor",
+    "email": "sarah@skynet-defense.com",
+    "company": "Cyberdyne Resistance",
+    "teamSize": "50 - 250 Users",
+    "useCase": "Autonomous workflow testing"
+  },
+  {
+    "registrationId": "EA-KLERP-MV0QY8PW",
+    "createdAt": "2026-10-09T09:12:10.148Z",
+    "product": "KLERP",
+    "name": "Priya Sharma",
+    "email": "priya@acme.com",
+    "company": "Acme Logistics",
+    "teamSize": "50 - 250 Users",
+    "useCase": "ERP testing"
+  },
+  {
+    "registrationId": "EA-KLERP-MV0MJ3JY",
+    "createdAt": "2026-10-09T07:08:25.150Z",
+    "product": "KLERP",
+    "name": "Elena Rostova",
+    "email": "elena@logisticscore.de",
+    "company": "Logistics Core GmbH",
+    "teamSize": "10-50",
+    "useCase": ""
+  },
+  {
+    "registrationId": "EA-KLERP-MV0LTI8Y",
+    "createdAt": "2026-10-09T06:48:31.138Z",
+    "product": "KLERP",
+    "name": "Sarah Jenkins",
+    "email": "sarah@acmeglobal.com",
+    "company": "Acme Global Freight",
+    "teamSize": "50 - 250 Users",
+    "useCase": "Multi-warehouse stock sync"
+  }
+]

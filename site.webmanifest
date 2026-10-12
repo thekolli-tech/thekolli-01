@@ -1,0 +1,21 @@
+{
+  "name": "THE KOLLI",
+  "short_name": "THE KOLLI",
+  "description": "Product-Led Software, AI Automation, Cloud Modernization & Proprietary Platforms",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#e2a45a",
+  "icons": [
+    {
+      "src": "assets/thekolli-icon.webp",
+      "sizes": "1000x911",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/thekolli-icon.png",
+      "sizes": "1000x911",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "the-kolli-website",
+  "version": "1.0.0",
+  "description": "THE KOLLI Official Website — Product-Led Software, Cloud Modernization & Enterprise AI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "the-kolli",
+    "software-development",
+    "cloud",
+    "managed-it",
+    "ai-automation",
+    "klerp",
+    "klai",
+    "klab",
+    "klora"
+  ],
+  "author": "THE KOLLI",
+  "license": "UNLICENSED"
+}
